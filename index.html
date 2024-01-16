@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do-App</title>
+</head>
+<body>
+  <h2>To Do List</h2>
+  <div class="input">
+    <input type="text" placeholder="enter activity..."> 
+    <button class="enterButton">Enter</button>
+  </div>
+
+  <div class="window">
+    <div class="activity-window"></div>
+
+  </div>
+
+  <style>
+    
+    *{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    h2{
+      text-align: center;
+      font-size: 30px;
+    }
+    .input{
+      display: flex;
+      justify-content: center;
+      gap: 20px
+    }
+    input{
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 5px;
+      padding: 5px 20px;
+      width: 250px;
+
+    }
+    .enterButton{
+      background-color: navy;
+      color: white;
+      border-style: none;
+      border-radius: 5px;
+      padding: 2px 15px;
+    }
+    .enterButton:hover{
+      opacity: .5;
+      cursor: pointer;
+    }
+    .window{
+      display: flex;
+      justify-content: center;
+    }
+    .activity-window{
+      padding-bottom: 10px;
+      margin-top: 30px;
+      flex-flow: wrap column;
+      background-color: rgb(221, 194, 114);
+      height: 500px;
+      width: 500px;
+      border-radius: 10px; 
+    }
+    .deleteButton{
+      font-size: 10px;
+      color: white;
+      border-radius: 30px;
+      background: rgb(255, 0, 0);
+      border-style: none;
+  
+    }
+    .deleteButton:hover{
+      opacity: .5;
+      cursor: pointer;
+    }
+    .task:hover{
+      background-color: rgb(231, 223, 201);
+    }
+    .task{
+      font-size: 30px;
+    }
+    .correction{
+      font-size: 30px;
+      background-color: rgb(109, 109, 109);
+      color: white;
+      text-decoration: line-through;
+    }
+  </style>
+
+  <script src="script.js"> </script>
+</body>
+</html>
